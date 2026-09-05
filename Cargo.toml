@@ -24,7 +24,8 @@ async-trait = "0.1"
 
 [dependencies.sqlx]
 version = "0.8"
-features = ["runtime-tokio", "sqlite", "migrate", "chrono", "uuid"]
+default-features = false
+features = ["runtime-tokio", "sqlite", "migrate", "chrono", "uuid", "derive", "macros"]
 
 [dev-dependencies]
 tokio-test = "0.4"
